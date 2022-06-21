@@ -16,6 +16,8 @@
 		FF2B046E2860BC1500B2A628 /* wanted_pre_onboardingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2B046D2860BC1500B2A628 /* wanted_pre_onboardingTests.swift */; };
 		FF2B04782860BC1500B2A628 /* wanted_pre_onboardingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2B04772860BC1500B2A628 /* wanted_pre_onboardingUITests.swift */; };
 		FF2B047A2860BC1500B2A628 /* wanted_pre_onboardingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2B04792860BC1500B2A628 /* wanted_pre_onboardingUITestsLaunchTests.swift */; };
+		FF2B04892860BEEB00B2A628 /* wantedPreOnboarding++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2B04882860BEEB00B2A628 /* wantedPreOnboarding++Bundle.swift */; };
+		FF2B048B2860BFF000B2A628 /* WeatherInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF2B048A2860BFF000B2A628 /* WeatherInfo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		FF2B04732860BC1500B2A628 /* wanted_pre_onboardingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wanted_pre_onboardingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2B04772860BC1500B2A628 /* wanted_pre_onboardingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wanted_pre_onboardingUITests.swift; sourceTree = "<group>"; };
 		FF2B04792860BC1500B2A628 /* wanted_pre_onboardingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wanted_pre_onboardingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF2B04882860BEEB00B2A628 /* wantedPreOnboarding++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "wantedPreOnboarding++Bundle.swift"; sourceTree = "<group>"; };
+		FF2B048A2860BFF000B2A628 /* WeatherInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = WeatherInfo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,11 @@
 		FF2B04552860BC1500B2A628 /* wanted_pre_onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				FF2B04562860BC1500B2A628 /* AppDelegate.swift */,
-				FF2B04582860BC1500B2A628 /* SceneDelegate.swift */,
+				FF2B04872860BE8C00B2A628 /* Resource */,
+				FF2B04862860BE7F00B2A628 /* Extension */,
 				FF2B045A2860BC1500B2A628 /* ViewController.swift */,
-				FF2B045C2860BC1500B2A628 /* Main.storyboard */,
-				FF2B045F2860BC1500B2A628 /* Assets.xcassets */,
-				FF2B04612860BC1500B2A628 /* LaunchScreen.storyboard */,
 				FF2B04642860BC1500B2A628 /* Info.plist */,
+				FF2B048A2860BFF000B2A628 /* WeatherInfo.plist */,
 			);
 			path = wanted_pre_onboarding;
 			sourceTree = "<group>";
@@ -125,6 +127,26 @@
 				FF2B04792860BC1500B2A628 /* wanted_pre_onboardingUITestsLaunchTests.swift */,
 			);
 			path = wanted_pre_onboardingUITests;
+			sourceTree = "<group>";
+		};
+		FF2B04862860BE7F00B2A628 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FF2B04882860BEEB00B2A628 /* wantedPreOnboarding++Bundle.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FF2B04872860BE8C00B2A628 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FF2B045C2860BC1500B2A628 /* Main.storyboard */,
+				FF2B045F2860BC1500B2A628 /* Assets.xcassets */,
+				FF2B04612860BC1500B2A628 /* LaunchScreen.storyboard */,
+				FF2B04562860BC1500B2A628 /* AppDelegate.swift */,
+				FF2B04582860BC1500B2A628 /* SceneDelegate.swift */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +256,7 @@
 				FF2B04632860BC1500B2A628 /* LaunchScreen.storyboard in Resources */,
 				FF2B04602860BC1500B2A628 /* Assets.xcassets in Resources */,
 				FF2B045E2860BC1500B2A628 /* Main.storyboard in Resources */,
+				FF2B048B2860BFF000B2A628 /* WeatherInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +284,7 @@
 				FF2B045B2860BC1500B2A628 /* ViewController.swift in Sources */,
 				FF2B04572860BC1500B2A628 /* AppDelegate.swift in Sources */,
 				FF2B04592860BC1500B2A628 /* SceneDelegate.swift in Sources */,
+				FF2B04892860BEEB00B2A628 /* wantedPreOnboarding++Bundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
