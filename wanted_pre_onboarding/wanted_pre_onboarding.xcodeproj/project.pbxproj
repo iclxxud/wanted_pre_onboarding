@@ -103,9 +103,10 @@
 		FF2B04552860BC1500B2A628 /* wanted_pre_onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				FF4035E7286189D400C815E0 /* Model */,
+				FF4035E4286187FE00C815E0 /* Presentations */,
 				FF2B04872860BE8C00B2A628 /* Resource */,
 				FF2B04862860BE7F00B2A628 /* Extension */,
-				FF2B045A2860BC1500B2A628 /* ViewController.swift */,
 				FF2B04642860BC1500B2A628 /* Info.plist */,
 				FF2B048A2860BFF000B2A628 /* WeatherInfo.plist */,
 			);
@@ -147,6 +148,37 @@
 				FF2B04582860BC1500B2A628 /* SceneDelegate.swift */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		FF4035E4286187FE00C815E0 /* Presentations */ = {
+			isa = PBXGroup;
+			children = (
+				FF4035E62861888800C815E0 /* ViewController */,
+				FF4035E52861887F00C815E0 /* View */,
+			);
+			path = Presentations;
+			sourceTree = "<group>";
+		};
+		FF4035E52861887F00C815E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF4035E62861888800C815E0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FF2B045A2860BC1500B2A628 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FF4035E7286189D400C815E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
