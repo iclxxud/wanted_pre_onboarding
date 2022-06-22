@@ -71,11 +71,10 @@ extension CityWeatherTableCell {
         tempLabel.text = "\(String(format: "%.0f", cityWeather.main.temp))°"
         humidityLabel.text = "\(cityWeather.main.humidity)%"
         
-        guard let iconID = cityWeather.weather.first?.icon
-        else { return }
+        guard let iconID = cityWeather.weather.first?.icon else { return }
+        let iconUrl = "http://openweathermap.org/img/wn/\(iconID)@2x.png"
+        iconImageView.setImageUrl(iconUrl)
         
-        let iconURL = "http://openweathermap.org/img/wn/\(iconID)@2x.png"
-        iconImageView.setImageUrl(iconURL)
     }
     
     func configureUI() {
@@ -112,7 +111,7 @@ extension CityWeatherTableCell {
             humidityLabel.centerXAnchor.constraint(equalTo: humidityIconImageView.centerXAnchor),
             humidityLabel.topAnchor.constraint(equalTo: humidityIconImageView.bottomAnchor, constant: 10)
         ])
-
+        
     }
     
 }

@@ -39,8 +39,6 @@ class WeatherMainViewController: UIViewController {
 
 extension WeatherMainViewController {
     private func configureUI() {
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-         navigationController?.navigationBar.shadowImage = UIImage()
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = self.view.bounds
@@ -82,6 +80,12 @@ extension WeatherMainViewController {
             self.citiesWeatherTableView.reloadData()
         }
     }
+    
+    private func setBackBtn() {
+        let backBtn = UIBarButtonItem(title: "Back", style: .plain, target: self, action: nil)
+        backBtn.tintColor = .white
+        self.navigationItem.backBarButtonItem = backBtn
+    }
 }
 
 extension WeatherMainViewController: UITableViewDelegate {
@@ -102,6 +106,8 @@ extension WeatherMainViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigationController?.pushViewController(WeatherDetailViewController(), animated: true)
+        setBackBtn()
+        let weatherDetailViewController = WeatherDetailViewController(weatherInfo: cityWeather[indexPath.row])
+        navigationController?.pushViewController(weatherDetailViewController, animated: true)
     }
 }
